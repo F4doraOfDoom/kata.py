@@ -5,7 +5,6 @@ import aiohttp
 import json
 import sys
 
-
 # Global CodeWars API URLs 
 USAGE = "Usage: python kata.py <codewars_username> (NOTE: Case sensitive)"
 USER_FORMAT = "https://www.codewars.com/api/v1/users/{}/code-challenges/completed?page=0"
@@ -73,6 +72,5 @@ if __name__ == "__main__":
         loop.run_until_complete(main())
         COMPLETE = True
         print(OUTPUT.format(USERNAME, solved["white"], solved["yellow"], solved["blue"], solved["purple"], total_points))
-    except Exception as e:
+    except:
         print(f"FATAL: {USERNAME} does not exist. (Note: names are case sensitive)")
-        print(e)

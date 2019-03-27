@@ -7,7 +7,14 @@ Yellow kata - 2 points
 Blue kata - 3 points
 Purple - 4 points
 
-Usage:
+# Usage:
 python3 kata.py -u/--user [CodeWar's username] -l/--lang [Programming Language]
 Optional flags:
 -v/--verbose, if you want the program to be print each challenge as the program acquires it from the CodeWar's API.
+
+# Depencendies:
+python3
+requests
+asyncio
+aiohttp
+json
